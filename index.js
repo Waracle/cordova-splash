@@ -168,6 +168,7 @@ var generateSplash = function (platform, splash) {
   if (!fs.existsSync(dst)) {
     fs.mkdirsSync(dst);
   }
+  console.log('srcPath: '+srcPath+', dstPath: '+dstPath);
   ig.crop({
     srcPath: srcPath,
     dstPath: dstPath,
